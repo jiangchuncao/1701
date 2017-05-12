@@ -1,0 +1,22 @@
+{
+  "name": "1701",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp-sass": "^3.1.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jiangtao",
+  "license": "ISC"
+}

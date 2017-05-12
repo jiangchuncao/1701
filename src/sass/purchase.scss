@@ -1,0 +1,231 @@
+@import 'reset.css';
+/*商品详情页*/
+.bg_e6e6e6 {
+    width: 100%;
+    height: auto;
+    background-color: #e6e6e6;
+    margin-top: 2px;
+}
+
+.w_1000 {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.list_cata_wrap {
+    width: 100%;
+    height: 40px;
+    background: #292a2c;
+    color: #fff;
+    line-height: 40px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+}
+
+.crumbSlide-con {
+    position: relative;
+    z-index: 2;
+    float: left;
+    height: 41px;
+    line-height: 41px;
+    vertical-align: middle;
+    li {
+        padding-left: 9px;
+        color: #fff;
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle;
+        position: relative;
+        a.crumbStrong {
+            font-size: 10px;
+            color: #fff;
+        }
+        .crumbArrow {
+            display: inline-block;
+            margin-left: 3px;
+            width: 10px;
+            height: 9px;
+            overflow: hidden;
+            background: url(../css/img/attribute_bg.png) -23px -76px no-repeat;
+        }
+    }
+    .crumbDrop-hover span {
+        font-size: 10px;
+    }
+}
+
+
+.filter {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    zoom: 0;
+    margin-top: 8px;
+    ul {
+        line-height: 25px;
+        height: 25px;
+        float: left;
+        background-color: #fff;
+        display: block;
+        width: 305px;
+        border: 1px solid #c9c9c9;
+        overflow: hidden;
+        li {
+            display: inline-block;
+            float: left;
+            width: 50px;
+            position: relative;
+            font-size: 13px;
+            padding-left: 10px;
+            border-right: 1px solid #c9c9c9;
+        }
+    }
+    .f_right {
+        float: right;
+        line-height: 36px;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-weight: bold;
+        span {
+            color: #df1a22;
+        }
+    }
+}
+
+
+/*<!-- 商品列表 -->*/
+.goodList_jt{
+    width: 1024px;
+    margin: 0 auto;
+}
+.good_ul_jt{
+    width: 100%;
+    overflow: hidden;
+    li{
+            width: 256px;
+            float: left;
+            text-align: center;
+            padding: 13px 0px;
+        .goodsl_box {
+            width: 226px;
+            min-height: 465px;
+            margin: 0 auto;
+            background-color: #fff;
+            position: relative;
+            cursor: pointer;
+            &:hover .goodsl_text{background:#c9c9c9;}
+           .goodImgcon{
+                height: 350px;
+                overflow: hidden;
+                img{width: 226px;margin-top:10px;}
+            }
+            .goods_scang {
+                width: 226px;
+                height: 48px;
+                line-height: 48px;
+                position: relative;
+                i{
+                        display: block;
+                        position: absolute;
+                        width: 18px;
+                        top: 18px;
+                        left: 176px;
+                        height: 14px;
+                        background: url(../css/img/new_5luxbg.png) no-repeat;
+                        background-position: -478px -57px;
+                }
+                span{margin-left: 2px;
+                    color: #757272;
+                    margin-right: 5px;
+                    float: right;
+                    width: 25px;}
+            }
+            .goodsl_text {
+                width: 100%;
+                text-align: center;
+                padding: 0px 0px 20px 0px;
+                font-family: "微软雅黑";
+                .brand_title {
+                    overflow: hidden;
+                    text-align: left;
+                    padding-left: 15px;
+                    width: 205px;
+                    white-space: nowrap;
+                      color: #050000; 
+                     font-weight: bold;
+                }
+                .goodsl_title {
+                    width: 200px;
+                    overflow: hidden;
+                    height: 25px;
+                    text-align: left;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    overflow: hidden;
+                    color: #000;
+
+                   
+
+                }
+                .goodsl_price {
+                    width: 205px;
+                    text-align: left;
+                    padding-left: 15px;
+                    white-space: nowrap;
+                    color: #000;
+                    span {  
+                            margin-left:30px; 
+                            color: #c98702;
+                            font-style: italic;
+                            font-weight: bold;
+                        }
+                }
+            }
+        }
+    
+            
+    }
+}
+
+/*/下一页*/
+.pages_con {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:10px;
+   
+ span {
+    display: inline-block;
+    width: 34px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 2px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: bold;
+   border: 1px solid #c69c6d;
+       color: #666;
+    padding: 0 13px;
+    cursor:pointer;
+}
+.pages_cur {
+    background-color: #c69c6d;
+    color: #fff;
+
+}
+
+}
+.blank_70{
+    clear: both;
+    height: 70px;
+    font-size: 1px;
+    line-height: 0px;
+    overflow: hidden;
+}

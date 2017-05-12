@@ -1,0 +1,652 @@
+/*公共模块*/
+body,html{ height:100%;}
+body, h1, h2, h3, h4, ul, ol, li, dl, dd, dt, p,button{margin:0;padding:0;}
+body {font:12px/20px Arial, Helvetica, sans-serif; color:#646464; background:#fff;font-family:"Microsoft YaHei","宋体",sans-serif;}
+a { color:#646464; text-decoration:none; outline:none;}
+a:hover { color:#333; text-decoration:none;}
+ul {list-style:none;}
+img {border:0;}
+input{font:12px/20px Arial, Helvetica, sans-serif; color:#646464; vertical-align:middle;}
+ 
+.clear:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.wrap{ width:1210px; margin:0 auto;}
+
+
+/*头部*/
+header {
+    /*顶部图片*/
+    .jt_head_top {
+        height: 80px;
+    }
+    /*头部2左*/
+    .jt_head {
+        height: 30px;
+        background: #f2f2f2;
+        /*左边*/
+        .jt_head_left {
+            // position: relative;
+            width: 400px;
+            float: left;
+            ul.head_left_d1 {
+                display: inline-block;
+                color: #666;
+                width: 110px;
+                .head_left_li {
+                    display: inline-block;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    height: 30px;
+                    width: 100%;
+                    position: relative;
+                    b {
+                        display: inline-block;
+                        width: 16px;
+                        height: 14px;
+                        background: url(../css/img/home.png) no-repeat center;
+                        position: absolute;
+                        left: 2px;
+                        top: 7px;
+                    }
+                    a {
+                        display: inline-block;
+                        margin-left: 7px;
+                        &:hover {
+                            color: #b28247;
+                        }
+                    }
+                    i {
+                        position: absolute;
+                        height: 12px;
+                        right: 0;
+                        top: 9px;
+                        border-left: 1px solid #dfdfdf;
+                    }
+                }
+            }
+            ul.head_left_d2 {
+                display: inline-block;
+                color: #666;
+                padding-left: 6px;
+                width: 200px;
+                li {
+                    display: inline-block;
+                    float: left;
+                    text-align: center;
+                    line-height: 30px;
+                    height: 30px;
+                    width: 100%;
+                    position: relative;
+                }
+                b {
+                    width: 25px;
+                    height: 30px;
+                    display: inline-block;
+                    float: left;
+                    background: url(../css/img/brandstore_share.png) no-repeat -348px -338px;
+                }
+            }
+        }
+    }
+    /*头部2右边*/
+    .jt_head_right {
+        width: 550px;
+        float: right;
+        line-height: 30px;
+        position: relative;
+        vertical-align: middle;
+        z-index:9999;  
+        ul {
+            float: left;
+            li {
+                display: inline-block;
+                color: #666;
+                float: left;
+            }
+            li.head_right_d1 {
+                width: 115px;
+                line-height: 30px;
+                height: 30px;
+                a {
+                    margin-right: 45px;
+                    &:hover {
+                        color: #d00000;
+                    }
+                }
+                i {
+                    height: 12px;
+                    border-left: 1px solid #dfdfdf;
+                }
+            }
+            li.head_right_d2 {
+                width: 90px;
+                line-height: 30px;
+                height: 30px;
+                span {
+                    width: 22px;
+                    height: 24px;
+                    float: left;
+                    background: url(../css/img/youli.gif) no-repeat;
+                    margin: 0 5px 0 17px;
+                }
+                a {
+                    margin-right: 11px;
+                    &:hover {
+                        color: #d00000;
+                    }
+                }
+                i {
+                    height: 12px;
+                    border-left: 1px solid #dfdfdf;
+                }
+            }
+            li.head_right_d3 {
+                width: 114px;
+                line-height: 30px;
+                height: 30px;
+
+                &:hover {
+                    background: #fff;
+                }
+                &:hover .d3_a1 {
+                    color: #d00000;
+                }
+                &:hover span {
+                    background: url(../css/img/brandstore_share.png) no-repeat -348px -464px;
+                }
+                &:hover div {
+                    display: block;
+                }
+                a {
+                    margin-right: 11px;
+                    margin-left: 5px;
+                }
+                span {
+                    width: 22px;
+                    height: 24px;
+                    float: right;
+                    background: url(../css/img/brandstore_share.png) no-repeat -348px -436px;
+                }
+                div {
+                    background: #fff;
+                    height: 150px;
+                  
+                    display: none;
+                    a {
+                        text-align: center;
+                        float: left;
+                        line-height: 30px;
+                        margin-left: 25px;
+                        &:hover {
+                            color: #d00000;
+                        }
+                    }
+                }
+            }
+            li.head_right_d4 {
+                width: 100px;
+                line-height: 30px;
+                height: 30px;
+                i {
+                    /*@extend  li.head_right_d1 i*/
+                    height: 12px;
+                    border-left: 1px solid #dfdfdf;
+                }
+                a {
+                    padding: 0 18px;
+                    &:hover {
+                        color: #d00000;
+                    }
+                }
+            }
+            li.head_right_d5 {
+                width: 123px;
+                line-height: 30px;
+                height: 30px;
+                text-align: center;
+                &:hover {
+                    background: #fff;
+                    border: 1px solid #eee;
+                }
+                &:hover a {
+                    color: #d00000;
+                }
+                &:hover p {
+                    background: url(../css/img/brandstore_share.png) no-repeat -348px -464px;
+                }
+                &:hover span {
+                    background: url(../css/img/brandstore_share.png) no-repeat -286px -404px;
+                }
+                &:hover div {
+                    display: block;
+                }
+                p {
+                    display: inline-block;
+                    background: url(../css/img/brandstore_share.png) no-repeat -348px -436px;
+                    width: 22px;
+                    height: 24px;
+                    float: right;
+                }
+                span {
+                    width: 22px;
+                    height: 24px;
+                    float: right;
+                    background: url(../css/img/brandstore_share.png) no-repeat -286px -369px;
+                }
+                div {
+                    height: 110px;
+                    background: #fff;
+                    border: 2px solid #eee;
+                    border-top: 1px solid #fff;
+                    background: #fff;
+                    display: none;
+                    img {
+                        width: 102px;
+                    }
+                }
+            }
+        }
+    }
+    /*头部三*/
+    .jt_head_mian {
+        background: #fff;
+        height: 110px;
+        position: relative;
+        .head_mian_logo {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 244px;
+            height: 110px;
+        }
+        .head_mian_img {
+            position: absolute;
+            top: 14px;
+            left: 300px;
+            width: 142px;
+            height: 80px;
+            overflow: hidden;
+        }
+        .head_mian_search {
+            overflow: hidden;
+            position: absolute;
+            /* left: 380px; */
+            left: 485px;
+            top: 36px;
+            .head_mian_form {
+                width: 383px;
+                padding: 2px 2px;
+                background: #c69c6d;
+                height: 34px;
+                input {
+                    outline: none;
+                    width: 300px;
+                    height: 32px;
+                    line-height: 34px;
+                    vertical-align: middle;
+                    border: none;
+                    background: #fff;
+                    padding-left: 3px;
+                    float: left;
+                }
+                span {
+                    width: 80px;
+                    height: 34px;
+                    float: left;
+                    color: #fff;
+                    font-size: 15px;
+                    text-align: center;
+                    line-height: 34px;
+                }
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    float: left;
+                    color: #999;
+                    font-size: 11px;
+                    padding-right: 25px;
+                    line-height: 32px;
+                }
+            }
+        }
+        .head_mian_cart {
+            position: absolute;
+            right: 70px;
+            top: 35px;
+            border: 1px solid #ccc;
+            li {
+                float: left;
+            }
+            .cart_li1 img {
+                padding: 3px 14px;
+            }
+            .cart_li2 {
+                p {
+                    line-height: 32px;
+                    float: left;
+                    b{color: red;}
+                }
+                span {
+                    float: left;
+                    display: inline-block;
+                    width: 20px;
+                    height: 32px;
+                    background: url(../css/img/brandstore_share.png) no-repeat -451px -405px;
+                }
+            }
+        }
+    }
+    /*导航栏*/
+    .jt_nav {
+        width: 100%;
+        height: 38px;
+        background: url(../img/navi_1pxbg.png) repeat-x;
+        vertical-align: middle;
+        position: relative;
+        .jt_nav_ul {
+            li {
+                float: left;
+                width: 130px;
+                height: 38px;
+                line-height: 38px;
+                font-size: 14px;
+                text-align: center;
+                font-family: "微软雅黑"
+            }
+            li a {
+                color: #c8a985;
+                &:hover {
+                    color: #fff;
+                }
+            }
+            .jt_nav_li {
+                background: url(../css/img/lux_index.png) -8px -215px no-repeat;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                .li_child{
+                    color: #fff;
+                }
+            }
+            .all_menu {
+                display: none;
+                position: absolute;
+                left: 0px;
+                top: 35px;
+                border-top: solid 4px #d9392d;
+                border-bottom: solid 4px #eee;
+                width: 130px;
+                background: #eee;
+                opacity: 0.85;
+                z-index: 999;
+                a {
+                    color:#000;
+                    &:hover {
+                        color: #c8a985;
+                    }
+                }
+                li {
+                    text-align: center;
+                    line-height: 40px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    height: 40px;
+                    position: relative;
+                    /*display: none;*/
+                    &:hover span {
+                        background: url(../css/img/brand_category2.png) -20px 3px no-repeat;
+                    }
+                    &:hover i{background: url(../css/img/share02.png) no-repeat -300px -27px;} 
+                    ;
+                    a {
+                        float: left;
+                        line-height: 45px;
+                    }
+                    span {
+                        float: left;
+                        width: 35px;
+                        height: 100%;
+                        margin-left: 5px;
+                        background: url(../css/img/brand_category1.png) -20px 3px no-repeat;
+                    }
+                    i {
+                        float: left;
+                        height: 100%;
+                        width: 17px;
+                        
+                    }
+                }
+                .s_menu_d {
+                    width: 520px;
+                    background-color: #eee;
+                    position: absolute;
+                    left: 130px;
+                    top: 0px;
+                    min-height: 210px;
+                    display: none;
+                    .menu_l {
+                        float: left;
+                        width: 517px;
+                        .menu_dl {
+                            overflow: hidden;
+                            border-bottom: solid 1px #999;
+                            padding: 0 3px 10px;
+
+                            dt {
+                                width: 80px;
+                                float: left;
+                                a {
+                                    color: #CF0201;
+                                    font-weight: bold;
+
+                                }
+                            }
+                            dd {
+                                width: 431px;
+                                float: left;
+                                a {
+                                    font-weight: normal;
+                                    margin-right: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*头部结束
+尾部*/
+#footer_message_bg {
+  background: url(../css/img/footer/footer_message_bg.jpg) center;
+  border-top: 1px solid #c9c9c9;
+}
+#footer_message {
+  width: 1210px;
+  height: 600px;
+  margin: 0 auto;
+  .footer_message_top {
+    height: 116px;
+    border-bottom: 1px solid #c9c9c9;
+    clear: both;
+  }
+  .footer_message_ctr {
+    height: 283px;
+    clear: both;
+  }
+  a {
+    color: #333;
+    font-size: 12px;
+  }
+  .footer_message_btm {
+    text-align: center;
+    color: #fff;
+    a {
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+.footer_message_top {
+  li {
+    width: 242px;
+    height: 64px;
+    float: left;
+    margin-top: 26px;
+  }
+  img {
+    width: 64px;
+    height: 64px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+    cursor: pointer;
+    vertical-align: top;
+    float: left;
+  }
+}
+.footer_message_top01_r {
+  display: inline-block;
+  float: left;
+  width: 160px;
+  height: 48px;
+  margin-top: 8px;
+  .p1 {
+    font-weight: bold;
+  }
+  .p2 {
+    color: #333;
+    font-size: 12px;
+  }
+}
+.footer_message_ctr_l {
+  float: left;
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    width: 185px;
+    overflow: hidden;
+    float: left;
+  }
+  .sp01 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  span {
+    display: block;
+    padding: 2px 0px;
+  }
+  .pht_app {
+    width: 140px;
+    height: 283px;
+  }
+  .pht_weibo {
+    width: 125px;
+    height: 283px;
+  }
+}
+.pht_app img ,.pht_weibo img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  vertical-align: top;
+}
+.footer_message_btm_t {
+  line-height: 66px;
+}
+.footer_message_btm_b {
+  margin-top: 23px;
+}
+
+/*右侧悬浮菜单*/
+/*右侧悬浮菜单*/
+    .slide{
+        width: 50px;
+        height: 250px;
+        position: fixed;
+        top: 50%;
+        margin-top: -126px;
+        background: #333;
+        right: 0;
+        border-radius: 5px 0 0 5px;
+        z-index: 999;
+        ul{
+            list-style: none;
+        }
+        .icon li{
+        width: 49px;
+        height: 50px;
+        background: url(../css/img/icon.png) no-repeat;
+        }
+        .icon .up{
+        background-position:-330px -120px ;
+        cursor:pointer;
+        }
+        .icon li.qq{
+        background-position:-385px -73px ;
+        }
+        .icon li.tel{
+            background-position:-385px -160px ;
+        }
+        .icon li.wx{
+            background-position:-385px -120px ;
+        }
+        .icon li.down{
+            background-position:-330px -160px ;
+            cursor:pointer;
+        }
+    
+
+    }
+  
+    /*控制菜单的按钮*/
+    .index_cy{
+        width: 30px;
+        height: 30px;
+        background: url(../css/img/index_cy.png);
+        position: fixed;
+        right: 0;
+        top: 50%;
+        margin-top: 140px;
+        background-position: 62px 0;
+        cursor: pointer;
+    }
+    .index_cy2{
+        width: 30px;
+        height: 30px;
+        background: url(../css/img/index_cy.png);
+        position: fixed;
+        right: 0;
+        top: 50%;
+        margin-top: 140px;
+        background-position: 30px 0;
+        cursor: pointer;
+    }
+    
+    /*自适应 当屏小于1050时隐藏*/
+    @media screen and (max-width: 1050px) {
+        .slide{
+            display: none;
+        }
+        #btn{
+            display: none;
+        }
+        
+    }

@@ -1,0 +1,6 @@
+img:放置css中使用的图片，如背景图片、图标等装饰图片
+reset.css 重置性样式（normalize.css）
+base.css 所有页面公用的样式
+common.css 公共模块/重复性类
+index.css
+style.css

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url(reset.css);
+/*****购物车*********/
+.gwc {
+  width: 950px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.gwc_tb1 {
+  width: 100%;
+  border-top: 5px solid #e7e7e7;
+  background: #e7e7e7;
+  height: 38px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.tb1_td1, .gwc_tb3 .tb3_td1, .gwc_tb3 .tb3_td2 {
+  width: 35px;
+  text-align: center;
+}
+
+.tb1_td3 {
+  width: 290px;
+  text-align: center;
+}
+
+.tb1_td4, .gwc_tb2 .tb2_td4 {
+  width: 260px;
+  text-align: center;
+}
+
+.tb1_td5, .gwc_tb2 .tb2_td5 {
+  width: 115px;
+  text-align: center;
+}
+
+.tb1_td6, .gwc_tb2 .tb2_td6 {
+  width: 135px;
+  text-align: center;
+}
+
+.gwc_tb2 {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.gwc_tb2 tr {
+  background: #eef6ff;
+  box-shadow: #eef6ff 0px 1px 9px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+.gwc_tb2 .tb2_td1 {
+  width: 60px;
+  text-align: center;
+}
+
+.gwc_tb2 .tb2_td2 {
+  width: 100px;
+  text-align: center;
+}
+
+.gwc_tb2 .tb2_td2 img {
+  width: 96px;
+  height: 120px;
+  border: 2px solid #c9c6c7;
+  margin: 1px 0px;
+}
+
+.gwc_tb2 .tb2_td3 {
+  width: 170px;
+  padding-left: 12px;
+  padding-right: 18px;
+}
+
+.gwc_tb2 .tb2_td3 a {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.gwc_tb2 .tb2_td5 input {
+  border: 1px solid #ccc;
+}
+
+.gwc_tb2 .tb2_td5 .min1 {
+  width: 20px;
+  height: 18px;
+}
+
+.gwc_tb2 .tb2_td5 .text_box1 {
+  width: 30px;
+  text-align: center;
+}
+
+.gwc_tb2 .tb2_td5 .add1 {
+  width: 20px;
+  height: 18px;
+}
+
+.gwc_tb3 {
+  width: 100%;
+  border: 1px solid #d2d2d2;
+  background: #e7e7e7;
+  height: 46px;
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.gwc_tb3 tr td {
+  font-size: 14px;
+}
+
+.gwc_tb3 .tb3_td4 {
+  width: 100px;
+  text-align: center;
+}
+
+.gwc_tb3 .tb3_td4 label {
+  color: #ff5500;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.gwc_tb3 .tb3_td5 {
+  width: 220px;
+  text-align: center;
+}
+
+.gwc_tb3 .tb3_td5 span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gwc_tb3 .tb3_td6 {
+  width: 110px;
+  text-align: center;
+}
+
+.gwc_tb3 .tb3_td6 .jz2 {
+  width: 100px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background: #ee0000;
+  display: none;
+  float: right;
+}
+
+.gwc_tb3 .tb3_td6 .jz1 {
+  display: block;
+}
