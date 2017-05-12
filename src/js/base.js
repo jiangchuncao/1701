@@ -48,6 +48,35 @@ define(['jquery'], function($) {
                         //$('.cart_li2 b').html(cookie_num)
                 }
 
+
+             // 回到顶部
+              $(".icon .up").click(function () {
+                    var speed=1000;//滑动的速度
+                    $('body,html').animate({ scrollTop: 0 }, speed);
+                    return false;
+             });
+
+               $('.icon .down').click(function(){
+                $('html,body').animate({ scrollTop: $(document).height() }, 1000); 
+                return false;
+
+              });
+
+                // 显示隐藏
+              $('#btn').click(function(){
+                if($(this).hasClass('index_cy')){
+                  $(this).removeClass('index_cy');
+                  $(this).addClass('index_cy2');
+                  $('.slide').slideUp(600)
+                }else{
+                  $(this).removeClass('index_cy2');
+                  $(this).addClass('index_cy');
+                   $('.slide').slideDown(600)
+                }
+                
+              });
+
+
             })
             return this
         }
