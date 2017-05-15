@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-05-12 17:41:38
+Date: 2017-05-15 10:49:28
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -61,9 +61,12 @@ CREATE TABLE `name` (
 -- ----------------------------
 -- Records of name
 -- ----------------------------
+INSERT INTO `name` VALUES ('sssss123', '1sssss123');
+INSERT INTO `name` VALUES ('sssss123', 'sssss123');
 INSERT INTO `name` VALUES ('123456', 'jiangtao1');
+INSERT INTO `name` VALUES ('jiang123', 'jiangtao123');
 INSERT INTO `name` VALUES ('1', '1');
-INSERT INTO `name` VALUES ('', '');
+INSERT INTO `name` VALUES ('2', '2');
 INSERT INTO `name` VALUES ('', '');
 
 -- ----------------------------
@@ -81,5 +84,7 @@ CREATE TABLE `shoppingcar` (
 -- ----------------------------
 -- Records of shoppingcar
 -- ----------------------------
-INSERT INTO `shoppingcar` VALUES ('WEILI ZHENG', '../img/goodlist/q1.JPG', '￥945', '1', 'XL');
-INSERT INTO `shoppingcar` VALUES ('A.TESTONI铁狮东尼', '../img/goodlist/y1.JPG', '￥7039', '1', 'XL');
+INSERT INTO `shoppingcar` VALUES ('ARMANI', '../img/goodlist/a1.JPG', '￥866', '1', 'XL');
+INSERT INTO `shoppingcar` VALUES ('ERMANNO', '../img/goodlist/e1.JPG', '￥2949', '1', 'S');
+INSERT INTO `shoppingcar` VALUES ('MSGM', '../img/goodlist/w1.JPG', '￥3279', '33', 'XL');
+INSERT INTO `shoppingcar` VALUES ('TRUSSARDI', '../img/goodlist/t1.JPG', '￥1869', '333', 'XL');

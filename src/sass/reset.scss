@@ -107,12 +107,22 @@ header {
                 color: #666;
                 float: left;
             }
-            li.head_right_d1 {
-                width: 115px;
+             li.head_right_da{
+                text-align: center;
                 line-height: 30px;
                 height: 30px;
+                color: #d88014;
+             }
+            li.head_right_d1 {
+                margin-left:13px; 
+                width: 45px;
+                line-height: 30px;
+                height: 30px;
+                span{display: none; margin-right: 10px;
+                     cursor:pointer;
+                }
                 a {
-                    margin-right: 45px;
+                    margin-right: 10px;
                     &:hover {
                         color: #d00000;
                     }

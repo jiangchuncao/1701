@@ -85,13 +85,11 @@ require(['config'],function(){
                           var gmsize=$('.dd_item .color_size_b').siblings('span').html();
                           //购买数量
                           var gmnum=$('#number').val()
-
                           $.ajax({
                               url: '../php/shopping-car.php',
                               // 图片地址，名字，价格，大小，数量
                               data:{_bigurl:bigurl,_name:name,_price:price,_gmsize:gmsize,_gmnum:gmnum},
                               success: function(data) {
-                                console.log(data)
                                     if (data==1) {
                                       // 开个定时器
                                        setInterval(function(){
@@ -99,7 +97,9 @@ require(['config'],function(){
                                        }, 1000);
                                        
                                     }else if(data == 0){
-                                      alert('购物车已存在请勿重复添加')
+                                        setInterval(function(){
+                                         window.location.href = "../html/shopping-car.html"
+                                       }, 1000);
                                     }else{
                                        alert('购物车添加失败')
                                      };

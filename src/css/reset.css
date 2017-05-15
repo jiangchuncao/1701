@@ -163,14 +163,28 @@ header .jt_head_right ul li {
   float: left;
 }
 
+header .jt_head_right ul li.head_right_da {
+  text-align: center;
+  line-height: 30px;
+  height: 30px;
+  color: #d88014;
+}
+
 header .jt_head_right ul li.head_right_d1 {
-  width: 115px;
+  margin-left: 13px;
+  width: 45px;
   line-height: 30px;
   height: 30px;
 }
 
+header .jt_head_right ul li.head_right_d1 span {
+  display: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
 header .jt_head_right ul li.head_right_d1 a {
-  margin-right: 45px;
+  margin-right: 10px;
 }
 
 header .jt_head_right ul li.head_right_d1 a:hover {

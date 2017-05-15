@@ -42,11 +42,26 @@ define(['jquery'], function($) {
                 var cookie = document.cookie.split('; ');
                 if (cookie != '') {
                     var cookie_name = cookie[0].split('=')[1];
-                    //var cookie_num=cookie[2].split('=')[1]
-                    // console.log(cookie_name,cookie_password)
-                    $('.head_right_d1').html(cookie_name + '欢迎你')
-                        //$('.cart_li2 b').html(cookie_num)
+                     var cookie_password= cookie[1].split('=')[1];
+                    // 生成欢迎你
+                    $('.head_right_da').html(cookie_name + '欢迎你')
+                    $('.head_right_d1 a').hide();
+                    $('.head_right_d1 span').show();
+
+                }else{
+                     $('.head_right_d1 a').show();
+                     $('.head_right_d1 span').hide();
                 }
+                // 清楚cookie
+                $('.head_right_d1 span').click(function(event) {
+                var now = new Date(); 
+                 now.setDate(now.getDate() - 77);
+                 document.cookie = 'username=' + cookie_name + ';expires=' + now;
+                 document.cookie = 'password=' + cookie_password + ';expires=' + now;
+                 var big_prob=location.search;
+                  window.location.href = big_prob;
+
+                });
 
 
              // 回到顶部

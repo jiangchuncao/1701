@@ -23,9 +23,9 @@
 	// 商品存在，返回0，
 	if($num >= 1){
 	 //更新数据库	
-		//$sq2 = "UPDATE shoppingcar SET num = $gmnum WHERE";
-		// 执行语句
-		//$result2 = mysqli_query($conn,$sq2);
+	 $sq2 = "UPDATE shoppingcar SET num='$gmnum' , size ='$gmsize' WHERE  name='$name'";
+		//执行语句
+		$result2 = mysqli_query($conn,$sq2);
 		echo "0";
 		// 商品不存在，添加，返回1
 	} else if($num == 0){

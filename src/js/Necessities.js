@@ -55,7 +55,7 @@ require(['config'], function() {
                         'my_pass': my_pass
                     }, function(data) {
                         if (data == "1") {
-                            alert('注册成功前往注册')
+                            alert('注册成功前往登录')
                             window.location.href = "../html/Login.html"
                         } else if (data == 0) {
                             alert('用户名已存在')
